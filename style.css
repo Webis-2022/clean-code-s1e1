@@ -19,19 +19,10 @@ body {
 .header__hidden-title {
     display: none;
 }
-
 .main {
     display: block;
     width: 500px;
     margin: 0 auto 0;
-}
-
-@media (max-width:768px) {
-.header { text-align: center;
-}
-}
-.add-item {
-
 }
 .add-item__input {
     width: 56%;
@@ -63,6 +54,7 @@ input,button{
 .btn:hover {
     color: #3a3A3a;
 }
+
 /* Heading */
 h2
  {
@@ -106,7 +98,6 @@ input#new-task {
     overflow: hidden;
     padding: 20px 0;
     border-bottom: 1px solid #eee;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -138,7 +129,7 @@ input#new-task {
 
 /* Completed */
 ul#completed-tasks .completed__task {
-    text-decoration: line-through
+    text-decoration: line-through;
     color: #888;
 }
 
@@ -154,4 +145,12 @@ ul .todo__item.todo__item--edit-mode input[type=text] {
 
 ul .todo__item.todo__item--edit-mode .todo__task {
     display:none;
+}
+
+/* Styles for tablets */
+
+@media (max-width:768px) {
+    .header {
+        text-align: center;
+    }
 }
