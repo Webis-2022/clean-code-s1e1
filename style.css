@@ -1,5 +1,5 @@
 /* Basic Style */
-body {
+.body {
     background-color: #f8f8f8;
     color: #333;
     font-family: Lato, sans-serif;
@@ -100,8 +100,8 @@ body {
     align-items: center;
     border-bottom: 1px solid #eee;
   }
-  .todo__item > input[type="checkbox"],
-  .completed__item > input[type="checkbox"]{
+  .todo__checkbox,
+  .completed__checkbox {
     margin: 0 10px;
   }
   .todo__task,
@@ -113,15 +113,14 @@ body {
     box-sizing: border-box;
     flex-grow: 1;
   }
+  .completed__task {
+    text-decoration: line-through;
+    color: #888;
+  }
   .todo__input,
   .completed__input {
     display: none;
     width: 250px;
-  }
-
-  #completed__list label {
-    text-decoration: line-through;
-    color: #888;
   }
 
   /* Button Styling */
@@ -183,7 +182,7 @@ body {
   }
 
   /* Styles for tablets */
-  @media (max-width:768px) {
+  @media (max-width: 768px) {
     .header {
       text-align: center;
     }
